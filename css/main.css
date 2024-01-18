@@ -1,0 +1,263 @@
+/* specification */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #304041;
+    letter-spacing: 0.05em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding-top: 145px;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.container_full-height {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 18px 52px;  
+    background: #FF7E36;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800;
+    display: block;
+    width: 247px;
+    border-radius: 119px;
+    text-align: center;
+    transition: all 0.5s ease; 
+}
+
+.btn:hover { 
+    background: #e77030;
+}
+
+.btn-ghost {
+    padding: 18px 0; 
+    border: 1px solid #FF7E36;
+    border-radius: 94px;
+    font-size: 16px;
+    color: #FF7E36;
+    font-weight: 800;
+    display: block;
+    width: 329px;
+    transition: all 0.5s ease;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-ghost:hover {
+    padding: 18px 0px; 
+    border: 1px solid #e77030;
+    background: #e77030;
+    color: #FFF;
+}
+
+
+/* header */
+
+
+.header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 1.39%, rgba(54, 207, 255, 0.23) 44.44%), url('../img/header-bg.png') no-repeat center / cover;
+    text-align: center;
+    color: #fff;
+    padding: 90px 0 80px;
+}
+
+.offer {
+    margin-top: 201px;
+}
+
+.offer__location {
+    display: block;
+    border-radius: 78px;
+    background: #FFF;
+    padding: 8px 0;
+    width: 243px;
+    margin: 0 auto;
+    color: #000;
+}
+
+.offer__title {
+    font-size: 60px;
+    letter-spacing: 0.15em;
+    margin-top: 24px;
+}
+
+.offer__text {
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.offer__btn {
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.arrow-down {
+    background: url('../img/arrow-down.svg');
+    width: 18px;
+    height: 27px;
+    display: block;
+    margin: 217px auto 0;
+    opacity: 0.8;
+    box-shadow: 0px 25px 70px 0px rgba(4, 43, 55, 0.28);       
+    transition: all 0.5s ease;
+}
+
+.arrow-down:hover {
+    opacity: 1;
+}
+
+
+/* routes */
+
+
+.section-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.destination {
+    background: #f2f2fa;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.destination__img {
+    width: 476px;
+    height: 649px;
+    transition: all 0.5s ease;
+}
+
+.destination:hover .destination__img {
+    box-shadow: 0px 25px 70px 0px rgba(4, 43, 55, 0.28);
+}
+
+.destination__content {
+    padding: 112px 75px;
+}
+
+.destination__route-number {
+    font-weight: 500;
+    color: #789AA0;
+}
+
+.destination__title {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.destination__text {
+    width: 521px;
+    line-height: 1.52em;
+    margin-bottom: 20px;
+}
+
+.destination__text_first {
+    margin-top: 40px;
+}
+
+.destination__btn {
+    background: url('../img/arrow-next.svg');
+    width: 68px;
+    height: 17px;
+    display: block;
+    opacity: 0;
+    transition: all 0.5s ease;
+    margin-top: 48px;
+}
+
+.destination:hover .destination__btn {
+    opacity: 1;
+}
+
+
+/* history */
+
+
+.history-content {
+    background: #fff url('../img/photo-tokyo.jpg') no-repeat right / 50%;
+    height: 626px;
+}
+
+.history-content__list {
+    margin-top: 120px;
+}
+
+.history-content__item {
+    font-size: 16px;
+    width: 401px;
+    margin-bottom: 90px;
+    position: relative;
+    left: 0;
+}
+
+.history-content__item:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 65px;
+    background: #f2f2fa;
+    position: absolute;
+    left: 7%;
+    bottom: 70%;
+    border-radius: 23px;
+    background: #4EB1B6;
+    transform: rotate(90deg);
+}
+
+
+/* footer */
+
+
+.footer-content {
+    display: flex;
+    padding: 147px 0 165px;
+}
+
+.footer__text {
+    font-size: 14px;
+    color: #6E7187;
+    margin-right: 60px;
+}
